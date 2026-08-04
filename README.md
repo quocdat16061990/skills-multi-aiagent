@@ -10,6 +10,7 @@ Nguồn: bộ skill chuẩn hóa để triển khai trên nhiều VPS/OpenClaw k
 2. `google-calendar-openclaw` - Đọc, tạo, cập nhật và xóa lịch Google Calendar theo quyền đã cấu hình.
 3. `google-drive-rclone-setup` - Thiết lập và vận hành kết nối Google Drive bằng rclone.
 4. `google-gmail-send` - Gửi Gmail và file kết quả theo yêu cầu.
+5. `post-fanpage-fb` - Chuẩn bị hoặc đăng nội dung lên Facebook Fanpage theo quy trình được duyệt.
 6. `youtube-competitor-analysis` - Phân tích kênh hoặc nội dung YouTube của đối thủ.
 
 ## Ghi chú
@@ -28,6 +29,7 @@ Nguồn: bộ skill chuẩn hóa để triển khai trên nhiều VPS/OpenClaw k
 - `google-calendar-openclaw`: đạt; đọc sự kiện từ Calendar ID đã cấu hình, không tạo/sửa/xóa lịch.
 - `google-drive-rclone-setup`: đạt; nhận remote `gdrive:` và đọc danh sách cấp một, không ghi/xóa file.
 - `google-gmail-send`: đạt; OAuth refresh được, đọc Gmail thành công, tạo–xóa draft kiểm tra thành công và không gửi email.
+- `post-fanpage-fb`: đạt; đã sửa wrapper trỏ đúng project, Facebook identity và Google Sheet đọc được, không đăng bài hoặc gửi tin.
 - `youtube-competitor-analysis`: đạt; thu dữ liệu bằng `yt-dlp`, tạo workbook 7 sheet và mở lại thành công.
 - Cả sáu skill có frontmatter hợp lệ, code Python/JSON/shell parse thành công, không có broken symlink và không phát hiện credential trong bộ xuất.
 - Kiểm tra portability trên cây VPS giả lập đạt 6/6 khi `HOME` và `PATH` không trỏ về VPS nguồn.

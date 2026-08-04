@@ -10,7 +10,10 @@ client_json=${OPENCLAW_GOOGLE_CLIENT_JSON:-$runtime_root/AI_Runtime/client.json}
 oauth_user_json=$google_oauth_dir/oauth-user.json
 
 if [ ! -x "$python_bin" ]; then
-    echo "Document Python runtime is missing: $python_bin" >&2
+    python_bin=$(command -v python3 || true)
+fi
+if [ -z "$python_bin" ] || [ ! -x "$python_bin" ]; then
+    echo "Python runtime is missing" >&2
     exit 1
 fi
 
@@ -32,7 +35,7 @@ if [ "$help_requested" = false ] && [ ! -r "$oauth_user_json" ]; then
     exit 1
 fi
 
-exec "$python_bin" "$script_dir/gmail_invoice_extractor.py" \
+exec "$python_bin" "$script_dir/gmail_send.py" \
     --client-json "$client_json" \
     --oauth-user-json "$oauth_user_json" \
     "$@"

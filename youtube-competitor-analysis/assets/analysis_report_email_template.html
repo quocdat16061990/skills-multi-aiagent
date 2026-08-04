@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{REPORT_TITLE}}</title>
+</head>
+<body style="margin:0;background:#f3f6fb;color:#172033;font-family:Arial,Helvetica,sans-serif;line-height:1.55;">
+  <!-- TEMPLATE ONLY: thay toàn bộ placeholder trước khi gửi. -->
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">{{EMAIL_PREHEADER}}</div>
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f3f6fb;padding:24px 10px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:760px;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(30,50,90,.10);">
+          <tr>
+            <td style="padding:30px;background:#10233f;color:#ffffff;">
+              <div style="font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#8dd4ff;font-weight:700;">{{REPORT_KICKER}}</div>
+              <h1 style="margin:8px 0 6px;font-size:28px;line-height:1.25;">{{REPORT_TITLE}}</h1>
+              <p style="margin:0;color:#d8e4f3;font-size:14px;">{{REPORT_SUBTITLE}}</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:24px 24px 8px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="25%" style="padding:6px;vertical-align:top;">
+                    <div style="background:#edf7ff;border:1px solid #d5ecff;border-radius:12px;padding:15px;text-align:center;">
+                      <div style="font-size:23px;font-weight:700;color:#0877b9;">{{METRIC_1_VALUE}}</div>
+                      <div style="font-size:12px;color:#526377;">{{METRIC_1_LABEL}}</div>
+                    </div>
+                  </td>
+                  <td width="25%" style="padding:6px;vertical-align:top;">
+                    <div style="background:#effcf4;border:1px solid #d6f3e2;border-radius:12px;padding:15px;text-align:center;">
+                      <div style="font-size:23px;font-weight:700;color:#168552;">{{METRIC_2_VALUE}}</div>
+                      <div style="font-size:12px;color:#526377;">{{METRIC_2_LABEL}}</div>
+                    </div>
+                  </td>
+                  <td width="25%" style="padding:6px;vertical-align:top;">
+                    <div style="background:#fff8eb;border:1px solid #f7e4bd;border-radius:12px;padding:15px;text-align:center;">
+                      <div style="font-size:23px;font-weight:700;color:#a46800;">{{METRIC_3_VALUE}}</div>
+                      <div style="font-size:12px;color:#526377;">{{METRIC_3_LABEL}}</div>
+                    </div>
+                  </td>
+                  <td width="25%" style="padding:6px;vertical-align:top;">
+                    <div style="background:#f5f0ff;border:1px solid #e5d8ff;border-radius:12px;padding:15px;text-align:center;">
+                      <div style="font-size:23px;font-weight:700;color:#6638a6;">{{METRIC_4_VALUE}}</div>
+                      <div style="font-size:12px;color:#526377;">{{METRIC_4_LABEL}}</div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:10px 30px 4px;">
+              <h2 style="font-size:19px;margin:8px 0;color:#10233f;">{{SUMMARY_HEADING}}</h2>
+              <ul style="margin:8px 0 14px;padding-left:21px;color:#34445a;">
+                {{SUMMARY_ITEMS_HTML}}
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:4px 30px 10px;">
+              <h2 style="font-size:19px;margin:8px 0;color:#10233f;">{{TOP_TABLE_HEADING}}</h2>
+              <table width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;font-size:13px;">
+                <tr style="background:#eaf1f8;color:#22364f;">
+                  <th align="left" style="padding:9px;border:1px solid #d7e1eb;">#</th>
+                  <th align="left" style="padding:9px;border:1px solid #d7e1eb;">{{TOP_TABLE_TITLE_LABEL}}</th>
+                  <th align="right" style="padding:9px;border:1px solid #d7e1eb;">{{TOP_TABLE_VALUE_LABEL}}</th>
+                </tr>
+                {{TOP_TABLE_ROWS_HTML}}
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:8px 30px 12px;">
+              <h2 style="font-size:19px;margin:8px 0;color:#10233f;">{{INSIGHTS_HEADING}}</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="50%" style="vertical-align:top;padding:0 8px 8px 0;">
+                    <div style="border:1px solid #dfe7f0;border-radius:12px;padding:15px;">
+                      <strong style="color:#10233f;">{{LEFT_CARD_HEADING}}</strong>
+                      <div style="margin-top:8px;color:#44556a;font-size:13px;">{{LEFT_CARD_CONTENT_HTML}}</div>
+                    </div>
+                  </td>
+                  <td width="50%" style="vertical-align:top;padding:0 0 8px 8px;">
+                    <div style="border:1px solid #dfe7f0;border-radius:12px;padding:15px;">
+                      <strong style="color:#10233f;">{{RIGHT_CARD_HEADING}}</strong>
+                      <div style="margin-top:8px;color:#44556a;font-size:13px;">{{RIGHT_CARD_CONTENT_HTML}}</div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:4px 30px 20px;">
+              <h2 style="font-size:19px;margin:8px 0;color:#10233f;">{{RECOMMENDATIONS_HEADING}}</h2>
+              <ol style="margin:8px 0;padding-left:22px;color:#34445a;">
+                {{RECOMMENDATION_ITEMS_HTML}}
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 30px;background:#f7f9fc;border-top:1px solid #e4eaf1;color:#66758a;font-size:12px;">
+              <strong>{{LIMITATIONS_LABEL}}</strong> {{LIMITATIONS_HTML}}<br><br>
+              {{ATTACHMENT_SUMMARY_HTML}}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
