@@ -1,0 +1,15 @@
+{
+  "topics": {
+    "Hướng dẫn": ["how to", "cách", "hướng dẫn", "tutorial"],
+    "Đánh giá": ["review", "đánh giá", "trải nghiệm"],
+    "So sánh": [" vs ", "so sánh", "tốt hơn"],
+    "Tin tức": ["news", "tin tức", "mới nhất", "cập nhật"]
+  },
+  "hooks": {
+    "Con số": "\\b\\d+[x%]?\\b",
+    "Câu hỏi": "^(why|how|what|tại sao|làm sao|cách nào)\\b",
+    "Khẩn cấp": "\\b(now|urgent|ngay|đừng bỏ lỡ)\\b",
+    "Danh sách": "\\b(top|\\d+ (ways|tips|cách|mẹo))\\b"
+  },
+  "recommendations": {"top_n": 10}
+}
